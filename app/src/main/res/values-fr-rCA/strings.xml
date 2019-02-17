@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="email">Inscrire votre courrier:</string>
+    <string name="password">Mots de passe:</string>
+    <string name="typeEmail">écrit ton courriel ici</string>
+    <string name="typePassword">Mots de passe ici</string>
+    <string name="login">Entrez</string>
+    <string name="profile">Votre profile</string>
+    <string name="name1">Votre noms</string>
+    <string name="name2">Entrez votre nom</string>
+    <string name="email1">Votre courriel:</string>
+    <string name="email2">Entrez votre courriel</string>
+    <string name="picture1">Votre photo:</string>
+    <string name="clickbutton">Appuyez sur le boutton pour la photo</string>
+</resources>
