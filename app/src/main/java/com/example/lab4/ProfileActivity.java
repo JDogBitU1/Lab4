@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class ProfileActivity extends MainActivity {
 
+    Button chatBttn;
     Button picButton;
     ImageView mImageButton;
     static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -30,6 +31,7 @@ public class ProfileActivity extends MainActivity {
         displayEmail = (TextView) findViewById(R.id.textView9);
         mImageButton = (ImageView) findViewById(R.id.imgView1);
         picButton = (Button) findViewById(R.id.picButton1);
+        chatBttn = (Button) findViewById(R.id.bttnChat);
 
 
         displayEmail.setText(data_1);
@@ -41,6 +43,18 @@ public class ProfileActivity extends MainActivity {
                 startActivityForResult(it, REQUEST_IMAGE_CAPTURE);
             }
         });
+
+
+    // CHAT ROOM
+        chatBttn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View view) {
+                Intent intent = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
 

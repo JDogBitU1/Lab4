@@ -13,4 +13,7 @@
     <string name="email2">Enter your email</string>
     <string name="picture1">Your picture:</string>
     <string name="clickbutton">Click the button above to take a picture</string>
+    <string name="goTochat">Go to Chat</string>
+    <string name="chatTitle">Jason Chat Application</string>
+    <string name="pleaseChat">Please type to chat</string>
 </resources>

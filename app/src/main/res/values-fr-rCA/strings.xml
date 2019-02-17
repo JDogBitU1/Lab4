@@ -13,4 +13,7 @@
     <string name="email2">Entrez votre courriel</string>
     <string name="picture1">Votre photo:</string>
     <string name="clickbutton">Appuyez sur le boutton pour la photo</string>
+    <string name="goTochat">Pour suivre au salle de chat</string>
+    <string name="chatTitle">L application de chat Jason</string>
+    <string name="pleaseChat">S.v.p. appuyez pour parler</string>
 </resources>

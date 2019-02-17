@@ -71,4 +71,12 @@
         android:layout_height="100dp"
         />
 
+    <Button
+        android:id="@+id/bttnChat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/goTochat"
+
+        />
+
 </LinearLayout>
