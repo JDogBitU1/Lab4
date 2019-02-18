@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/RelativeLayout1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -14,46 +14,51 @@
 
             <TextView
                 android:id="@+id/chatHeading"
-                android:layout_alignParentStart="true"
-                android:layout_width="500dp"
                 android:layout_height="match_parent"
-                android:text="@string/chatTitle"/>
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:text="@string/chatTitle"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+            />
 
-        </RelativeLayout>
+        </LinearLayout>
 
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/RelativeLayout2"
-            android:layout_width="250dp"
+            android:layout_width="500dp"
             android:layout_height="50dp"
             android:layout_below="@+id/RelativeLayout1"
             >
-
-            <ImageButton
-                android:id="@+id/imageButtonReceive"
-                android:gravity="fill"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/row_receive"
-                android:scaleType="fitCenter"
-                />
 
             <EditText
                 android:id="@+id/editTextReceive"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:hint="@string/pleaseChat"
                 android:inputType="textPersonName"
-                android:hint="pleaseChat" />
-        </RelativeLayout>
+                android:textColor="@color/colorPrimary"
+            />
+
+            <ImageButton
+                android:id="@+id/imageButtonReceive"
+                android:gravity="fill"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/row_receive"
+                android:scaleType="fitCenter"
+            />
+
+        </LinearLayout>
 
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/RelativeLayout3"
             android:layout_below="@+id/RelativeLayout2"
-            android:layout_width="250dp"
+            android:layout_width="500dp"
             android:layout_height="50dp">
 
-        </RelativeLayout>
             <ImageButton
                 android:id="@+id/imageButtonSend"
                 android:layout_width="50dp"
@@ -61,14 +66,14 @@
                 app:srcCompat="@drawable/row_send"
                 android:scaleType="fitCenter" />
 
-        <EditText
-            android:id="@+id/editTextSend"
-            android:layout_alignParentBottom="true"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="@string/pleaseChat"/>
-        </RelativeLayout>
+            <EditText
+                android:id="@+id/editTextSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/pleaseChat"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
 
 </RelativeLayout>
