@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lab4">
     <uses-feature android:name="android.hardware.camera"
@@ -26,6 +27,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChatRoomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListViewChat$ListDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
