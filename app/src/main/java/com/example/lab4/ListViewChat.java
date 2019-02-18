@@ -6,9 +6,7 @@ import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class ListViewChat {
-
-    public class ListDisplay extends MainActivity {
+    public class ListViewChat extends MainActivity {
         // Array of strings...
         String[] mobileArray = {"Android", "IPhone", "WindowsMobile", "Blackberry",
                 "WebOS", "Ubuntu", "Windows7", "Max OS X"};
@@ -28,4 +26,4 @@ public class ListViewChat {
 
     }
 
-}
+

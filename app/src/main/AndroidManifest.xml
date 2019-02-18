@@ -33,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListViewChat$ListDisplay">
+        <activity android:name=".ListViewChat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
