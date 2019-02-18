@@ -12,7 +12,7 @@ public class ChatRoomActivity extends MainActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        setContentView(R.layout.activity_listview);
         Log.e(tag, "StateInfo %%%%%%%%%%% onCreate()");
 
     }
