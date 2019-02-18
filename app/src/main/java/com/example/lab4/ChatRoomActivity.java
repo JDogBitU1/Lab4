@@ -3,40 +3,26 @@ package com.example.lab4;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 
-public class ChatRoomActivity extends MainActivity {
+public class ChatRoomActivity extends ProfileActivity {
 
-    String tag = "LifeCycle Step: ";
+    String[] mobileArray = {"Android", "IPhone", "WindowsMobile", "Blackberry",
+            "WebOS", "Ubuntu", "Windows7", "Max OS X"};
 
-
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
-        Log.e(tag, "StateInfo %%%%%%%%%%% onCreate()");
 
+        ArrayAdapter adapter = new ArrayAdapter<String>(this,
+                R.layout.activity_listview, mobileArray);
+
+        ListView listView = (ListView) findViewById(R.id.mobile_list);
+                listView.setAdapter(adapter);
     }
-/*
-    class ChatRoomActivity extends BaseAdapter {
-        @Override
-        public int getCount() {
-            return list.size();
-        }
-
-        @Override
-        public Object getItem(int position) {
-            return null;
-        }
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-        public view getView(int position, view convertView, ViewGroup){
-            return null;
-        }
-    }
-
-*/
 
 
 }

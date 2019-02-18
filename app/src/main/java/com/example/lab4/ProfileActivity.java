@@ -26,7 +26,7 @@ public class ProfileActivity extends MainActivity {
         Log.e(tag, "StateInfo %%%%%%%%%%% onCreate()");
 
         Bundle bundle = getIntent().getExtras();
-        String data_1 = bundle.getString("firstData");
+        //String data_1 = bundle.getString("firstData");
 
         displayEmail = (TextView) findViewById(R.id.textView9);
         mImageButton = (ImageView) findViewById(R.id.imgView1);
@@ -34,7 +34,7 @@ public class ProfileActivity extends MainActivity {
         chatBttn = (Button) findViewById(R.id.bttnChat);
 
 
-        displayEmail.setText(data_1);
+        //displayEmail.setText(data_1);
 
         picButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +43,6 @@ public class ProfileActivity extends MainActivity {
                 startActivityForResult(it, REQUEST_IMAGE_CAPTURE);
             }
         });
-
 
     // CHAT ROOM
         chatBttn.setOnClickListener(new View.OnClickListener(){
