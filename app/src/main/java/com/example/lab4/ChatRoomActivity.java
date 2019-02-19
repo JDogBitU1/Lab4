@@ -20,7 +20,7 @@ public class ChatRoomActivity extends ProfileActivity {
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.list_view_row_item, mobileArray);
 
-        ListView listView = (ListView) findViewById(R.id.textViewItem);
+        ListView listView = (ListView) findViewById(R.id.textViewItem12);
         listView.setAdapter(adapter);
     }
 
