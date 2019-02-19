@@ -6,7 +6,7 @@ import android.widget.ListView;
 import android.app.Activity;
 import android.app.AlertDialog;
 
-public class ListViewChat extends ProfileActivity {
+public class ListViewChat extends MainActivity {
 
         AlertDialog alertDialogStores;
 
@@ -21,14 +21,14 @@ public class ListViewChat extends ProfileActivity {
                 public void onClick(View v) {
                     switch (v.getId()) {
 
-                        case R.id.textViewItem:
+                        case R.id.textViewItem12:
                             showPopUp();
                             break;
                     }
                 }
             };
 
-            findViewById(R.id.textViewItem).setOnClickListener(handler);
+            findViewById(R.id.textViewItem12).setOnClickListener(handler);
 
         }
 
@@ -60,7 +60,7 @@ public class ListViewChat extends ProfileActivity {
             ObjectItemData[19] = new ObjectItem(110, "Mang Inasal 2");
 
             // our adapter instance
-            ArrayAdapterItem adapter = new ArrayAdapterItem(this, R.layout.activity_listview, ObjectItemData);
+            ArrayAdapterItem adapter = new ArrayAdapterItem(this, R.layout.list_view_row_item, ObjectItemData);
 
             // create a new ListView, set the adapter and item click listener
             ListView listViewItems = new ListView(this);
