@@ -17,7 +17,7 @@ import android.widget.Toast;
 
             Context context = view.getContext();
 
-            TextView textViewItem = ((TextView) view.findViewById(R.id.mobile_list));
+            TextView textViewItem = ((TextView) view.findViewById(R.id.textViewItem));
 
             // get the clicked item name
             String listItemText = textViewItem.getText().toString();

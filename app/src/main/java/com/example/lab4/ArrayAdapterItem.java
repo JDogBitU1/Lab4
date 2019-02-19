@@ -43,7 +43,7 @@ import android.widget.TextView;
             ObjectItem objectItem = data[position];
 
             // get the TextView and then set the text (item name) and tag (item ID) values
-            TextView textViewItem = (TextView) convertView.findViewById(R.id.mobile_list);
+            TextView textViewItem = (TextView) convertView.findViewById(R.id.textViewItem);
             textViewItem.setText(objectItem.itemName);
             textViewItem.setTag(objectItem.itemId);
 

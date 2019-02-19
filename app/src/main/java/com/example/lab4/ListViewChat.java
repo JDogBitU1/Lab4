@@ -14,21 +14,21 @@ public class ListViewChat extends ProfileActivity {
         public void onCreate(Bundle savedInstanceState) {
 
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_listview);
+            setContentView(R.layout.list_view_row_item);
 
             // a button to show the pop up with a list view
             View.OnClickListener handler = new View.OnClickListener(){
                 public void onClick(View v) {
                     switch (v.getId()) {
 
-                        case R.id.mobile_list:
+                        case R.id.textViewItem:
                             showPopUp();
                             break;
                     }
                 }
             };
 
-            findViewById(R.id.mobile_list).setOnClickListener(handler);
+            findViewById(R.id.textViewItem).setOnClickListener(handler);
 
         }
 
