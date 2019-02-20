@@ -1,8 +1,8 @@
 package com.example.lab4;
 
-import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+        import android.os.Bundle;
+        import android.widget.ArrayAdapter;
+        import android.widget.ListView;
 
 public class ChatRoomActivity extends ProfileActivity {
 
@@ -14,11 +14,13 @@ public class ChatRoomActivity extends ProfileActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view_row_item);
 
-        ArrayAdapter adapter = new ArrayAdapter<String>(this,
-                R.layout.list_view_row_item, mobileArray);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                R.layout.list_view_row_item,
+                R.id.visualDisplayList,
+                mobileArray);
 
-        ListView listView = (ListView)findViewById(R.id.textViewItem12);
-        listView.setAdapter(adapter);
+        ListView innerLayoutForItems = (ListView)findViewById(R.id.visualDisplayList);
+        innerLayoutForItems.setAdapter(adapter);
     }
 
 
