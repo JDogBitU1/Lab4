@@ -1,7 +1,12 @@
-package com.example.lab4;
+/*package com.example.lab4;
 
-public class ListViewChat extends MainActivity { }
-  /*  // ADDED WEDNESDAY
+import android.app.AlertDialog;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
+
+public class ListViewChat extends MainActivity {
+
         AlertDialog alertDialogStores;
 
         @Override
@@ -15,16 +20,21 @@ public class ListViewChat extends MainActivity { }
                 public void onClick(View v) {
                     switch (v.getId()) {
 
-                        case R.id.textViewItem12:
+                        case R.id.visualDisplayList:
                             showPopUp();
                             break;
                     }
                 }
             };
 
-            findViewById(R.id.textViewItem12).setOnClickListener(handler);
+            findViewById(R.id.visualDisplayList).setOnClickListener(handler);
 
         }
+        */
+
+
+
+    /*
 
         public void showPopUp(){
 
@@ -73,7 +83,7 @@ public class ListViewChat extends MainActivity { }
 
 
 
-
+*/
 
 
 

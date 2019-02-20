@@ -1,14 +1,11 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListViewChat" >
+    android:id="@+id/lable1"
+    android:padding="10dp"
+    android:textSize="16dp"
+    android:textStyle="bold">
 
-    <Button
-        android:id="@+id/buttonShowPopUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Show AlertDialog with ListView" />
-
-</RelativeLayout>
+</TextView>

@@ -1,24 +1,34 @@
+/*
 package com.example.lab4;
 
-/*
-     * Here you can control what to do next when the user selects an item
-     */
+import android.content.Context;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
 
-    /*  // ADDED WEDNESDAY
-    public class OnItemClickListenerListViewItem implements OnItemClickListener {
+
+*/
+/*
+ * Here you can control what to do next when the user selects an item
+ *//*
+
+
+
+public class OnItemClickListenerListViewItem implements AdapterView.OnItemClickListener {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             Context context = view.getContext();
 
-            TextView textViewItem = ((TextView) view.findViewById(R.id.textViewItem12));
+            ListView listViewItem = ((ListView) view.findViewById(R.id.visualDisplayList));
 
             // get the clicked item name
-            String listItemText = textViewItem.getText().toString();
+            String listItemText = listViewItem.getText().toString();
 
             // get the clicked item ID
-            String listItemId = textViewItem.getTag().toString();
+            String listItemId = listViewItem.getTag().toString();
 
             // just toast it
             Toast.makeText(context, "Item: " + listItemText + ", Item ID: " + listItemId, Toast.LENGTH_SHORT).show();
@@ -29,6 +39,4 @@ package com.example.lab4;
 
     }
 
-
 */
-    // ADDED WEDNESDAY

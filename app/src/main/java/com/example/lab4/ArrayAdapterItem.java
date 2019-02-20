@@ -1,6 +1,14 @@
+/*
 package com.example.lab4;
 
-/*
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
     // here's our beautiful adapter
     public class ArrayAdapterItem extends ArrayAdapter<ObjectItem> {

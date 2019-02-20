@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class ProfileActivity extends MainActivity {
 
     Button chatBttn;
-    Button picButton;
+    Button bttnPhoto;
     ImageView mImageButton;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     String tag = "LifeCycle Step: ";
@@ -28,15 +28,15 @@ public class ProfileActivity extends MainActivity {
         Bundle bundle = getIntent().getExtras();
         //String data_1 = bundle.getString("firstData");
 
-        displayEmail = (TextView) findViewById(R.id.textView9);
+        displayEmail = (TextView) findViewById(R.id.textView4);
         mImageButton = (ImageView) findViewById(R.id.imgView1);
-        picButton = (Button) findViewById(R.id.picButton1);
+        bttnPhoto = (Button) findViewById(R.id.bttnPhoto);
         chatBttn = (Button) findViewById(R.id.bttnChat);
 
 
         //displayEmail.setText(data_1);
 
-        picButton.setOnClickListener(new View.OnClickListener() {
+        bttnPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
