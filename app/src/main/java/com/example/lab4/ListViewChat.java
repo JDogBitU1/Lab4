@@ -1,13 +1,7 @@
 package com.example.lab4;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ListView;
-import android.app.Activity;
-import android.app.AlertDialog;
-
-public class ListViewChat extends MainActivity {
-
+public class ListViewChat extends MainActivity { }
+  /*  // ADDED WEDNESDAY
         AlertDialog alertDialogStores;
 
         @Override

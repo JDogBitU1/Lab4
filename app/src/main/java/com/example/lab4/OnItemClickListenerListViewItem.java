@@ -1,15 +1,10 @@
 package com.example.lab4;
 
-import android.content.Context;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.TextView;
-import android.widget.Toast;
-
-    /*
+/*
      * Here you can control what to do next when the user selects an item
      */
+
+    /*  // ADDED WEDNESDAY
     public class OnItemClickListenerListViewItem implements OnItemClickListener {
 
         @Override
@@ -35,3 +30,5 @@ import android.widget.Toast;
     }
 
 
+*/
+    // ADDED WEDNESDAY

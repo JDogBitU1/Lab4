@@ -1,5 +1,5 @@
 package com.example.lab4;
-
+  /*  // ADDED WEDNESDAY
 //another class to handle item's id and name
 public class ObjectItem {
 
@@ -13,3 +13,7 @@ public class ObjectItem {
     }
 
 }
+
+
+  */
+  // ADDED WEDNESDAY
