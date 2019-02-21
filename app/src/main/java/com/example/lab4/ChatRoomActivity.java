@@ -12,7 +12,7 @@ public class ChatRoomActivity extends ProfileActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listview);
+        setContentView(R.layout.list_view_row_item);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>
                 (this, R.layout.activity_listview, mobileArray);
