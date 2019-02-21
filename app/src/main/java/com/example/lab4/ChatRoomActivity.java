@@ -1,11 +1,10 @@
 package com.example.lab4;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class ChatRoomActivity extends AppCompatActivity {
+public class ChatRoomActivity extends ProfileActivity {
 
     String[] mobileArray = {"Android", "IPhone", "WindowsMobile", "Blackberry",
             "WebOS", "Ubuntu", "Windows7", "Max OS X"};
@@ -13,10 +12,10 @@ public class ChatRoomActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view_row_item);
+        setContentView(R.layout.activity_listview);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, R.layout.list_view_row_item, mobileArray);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>
+                (this, R.layout.activity_listview, mobileArray);
 
         ListView listView = findViewById(R.id.visualDisplayList);
         listView.setAdapter(adapter);
