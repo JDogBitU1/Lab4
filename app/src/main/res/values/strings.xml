@@ -17,13 +17,4 @@
 <string name="chatTitle">Jason Chat Application</string>
 <string name="pleaseChat">Please type to chat</string>
 
-
-        <string-array name="mobileArray1">
-            <item>Mercury</item>
-            <item>Venus</item>
-            <item>Earth</item>
-            <item>Mars</item>
-        </string-array>
-
-
 </resources>
