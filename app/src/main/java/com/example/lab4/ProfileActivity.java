@@ -34,7 +34,7 @@ public class ProfileActivity extends MainActivity {
         chatBttn = (Button) findViewById(R.id.bttnChat);
 
 
-        //displayEmail.setText(data_1);
+        displayEmail.setText("jason.tomkins@gmail.com");
 
         bttnPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
